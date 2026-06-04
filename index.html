@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>プライバシーポリシー | Cert Rogue 知識のダンジョン</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #181b22;
+    --text: #e6e8ee;
+    --muted: #9aa3b2;
+    --accent: #7cc1ff;
+    --border: #262a33;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+                 "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 40px 0 12px;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  h3 {
+    font-size: 15px;
+    margin: 24px 0 8px;
+    color: var(--accent);
+  }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--panel);
+    color: var(--muted);
+    font-weight: 600;
+    width: 30%;
+  }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+  .muted { color: var(--muted); font-size: 13px; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  code {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <div class="sub">アプリ名: Cert Rogue 知識のダンジョン / 最終更新日: 2026年6月4日</div>
+  </header>
+
+  <p>
+    本プライバシーポリシーは、私 (個人開発者) が提供する iOS アプリ
+    <strong>「Cert Rogue 知識のダンジョン」</strong> (以下「本アプリ」) における、
+    ユーザー情報の取り扱い方針を定めるものです。
+    本アプリをご利用いただく前に、必ず本ポリシーをお読みください。
+  </p>
+
+  <div class="panel">
+    <strong>要約</strong>
+    <ul>
+      <li>本アプリは、ユーザーを識別するためのアカウント登録を一切要求しません。</li>
+      <li>学習履歴・進捗・設定はすべて端末ローカルに保存され、開発者のサーバには送信されません。</li>
+      <li>iCloud 同期を有効にした場合、データはユーザー本人の iCloud (Apple 社が運営する Private Database) にのみ保存されます。</li>
+      <li>広告は表示しません。トラッキング目的の SDK は組み込んでいません。</li>
+      <li>課金処理は Apple および RevenueCat が標準仕組みで行い、本アプリは決済情報を取得・保管しません。</li>
+    </ul>
+  </div>
+
+  <h2>1. 開発者情報</h2>
+  <table>
+    <tr><th>提供者</th><td>個人開発者 (Tempura Studio)</td></tr>
+    <tr><th>連絡先</th><td><a href="mailto:droid1729@gmail.com">droid1729@gmail.com</a></td></tr>
+  </table>
+
+  <h2>2. 取得する情報の種類</h2>
+
+  <h3>2-1. 端末ローカルに保存される情報</h3>
+  <p>
+    本アプリは、ゲームを継続的にプレイできるようにするため、以下の情報を
+    <strong>ご利用端末内のローカルストレージ (localStorage / IndexedDB)</strong>
+    に保存します。これらは、開発者を含む第三者には一切送信されません。
+  </p>
+  <ul>
+    <li>ダンジョン進捗 (到達フロア・クリア状況)</li>
+    <li>SRS (間隔反復学習) アルゴリズム用の出題履歴・正誤履歴</li>
+    <li>取得済み装備・コイン残高・図鑑の解禁状況</li>
+    <li>音量・操作モードなどのアプリ設定</li>
+    <li>無料/有料コンテンツのアンロック状態 (キャッシュ用)</li>
+  </ul>
+
+  <h3>2-2. iCloud (CloudKit Private Database) に保存される情報</h3>
+  <p>
+    iOS 端末で iCloud にサインインし、かつ本アプリの iCloud 同期機能が有効な場合、
+    上記の学習データは Apple 社が運営する
+    <strong>iCloud Private Database (Private DB)</strong> にも保存されます。
+  </p>
+  <ul>
+    <li>Private DB は、サインインしている Apple ID のユーザー本人のみがアクセスできる領域です。</li>
+    <li>開発者を含む第三者は、Private DB の内容を閲覧・取得することはできません。</li>
+    <li>同期されるデータの内容は「2-1.」と同じ範囲です (個人を識別する情報は含まれません)。</li>
+    <li>iCloud 同期を無効にしたい場合は、iOS の「設定」 > Apple ID > iCloud > Cert Rogue をオフにしてください。</li>
+  </ul>
+
+  <h3>2-3. 課金に関する情報</h3>
+  <p>
+    本アプリの追加コンテンツ購入には、Apple の StoreKit と、課金管理プラットフォーム
+    <strong>RevenueCat</strong> を利用します。
+  </p>
+  <ul>
+    <li>決済情報 (クレジットカード番号等) は本アプリでは取得・保管しません。Apple 側で処理されます。</li>
+    <li>RevenueCat には、購入が成立した事実 (どの商品が購入されたか) と、無作為に生成された匿名 App User ID のみが送信されます。氏名・メールアドレス・端末識別子等は送信しません。</li>
+    <li>RevenueCat のプライバシーポリシーは <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">https://www.revenuecat.com/privacy/</a> を参照してください。</li>
+  </ul>
+
+  <h3>2-4. 取得しない情報</h3>
+  <p>本アプリは、以下のいずれの情報も取得・収集しません。</p>
+  <ul>
+    <li>氏名、メールアドレス、電話番号、住所などの個人を直接識別する情報</li>
+    <li>位置情報 (GPS)</li>
+    <li>連絡先、写真、カレンダー、マイク、カメラへのアクセス</li>
+    <li>広告識別子 (IDFA) およびトラッキング目的のデバイス情報</li>
+    <li>ブラウザ Cookie / Web ビーコン (アプリ内で広告・トラッキング SDK を使用していないため)</li>
+  </ul>
+
+  <h2>3. 情報の利用目的</h2>
+  <p>
+    ローカルおよび iCloud に保存される学習データは、以下の目的でのみ利用されます。
+  </p>
+  <ul>
+    <li>ゲームの進捗を継続して保存・復元するため</li>
+    <li>SRS アルゴリズムに基づき、忘却タイミングに合わせて問題を出題するため</li>
+    <li>同じ Apple ID の複数の端末で進捗を同期するため (iCloud 同期有効時のみ)</li>
+  </ul>
+
+  <h2>4. 第三者提供</h2>
+  <p>
+    本アプリは、ユーザーから取得した情報を、本人の同意なく第三者に提供することはありません。
+    課金処理に関する Apple および RevenueCat への情報送信は、本サービスの提供に必要な範囲に限定されます。
+  </p>
+
+  <h2>5. 広告について</h2>
+  <p>
+    本アプリは広告を表示しません。広告ネットワークの SDK は組み込まれていません。
+  </p>
+
+  <h2>6. データの削除方法</h2>
+  <ul>
+    <li>端末ローカルのデータを削除したい場合は、iOS の「設定」アプリから本アプリをアンインストールするか、アプリ内の「設定」 > 「データ初期化」をお使いください。</li>
+    <li>iCloud に保存されたデータを削除したい場合は、iOS の「設定」 > Apple ID > iCloud > 「ストレージを管理」 > Cert Rogue から削除してください。</li>
+    <li>RevenueCat 側の購入履歴データの削除をご希望の場合は、本ポリシー末尾の連絡先までご相談ください。</li>
+  </ul>
+
+  <h2>7. 子どもの利用について</h2>
+  <p>
+    本アプリは学習アプリとして設計されており、特定の年齢層に限定したサービスではありません。
+    13 歳未満の方が利用される場合は、保護者の同意のもとでご利用ください。
+    13 歳未満の方から、保護者の同意なく個人を識別する情報を収集することはありません
+    (そもそも本アプリは個人を識別する情報を取得しません)。
+  </p>
+
+  <h2>8. セキュリティ</h2>
+  <p>
+    端末ローカルのデータは、iOS が標準で提供するサンドボックス機構により保護されます。
+    iCloud に保存されるデータは、Apple のインフラ上で暗号化されて保管されます。
+  </p>
+
+  <h2>9. 本ポリシーの変更</h2>
+  <p>
+    本ポリシーの内容は、法令の変更やアプリ機能の追加に伴い、予告なく改定される場合があります。
+    重要な変更を行う場合は、アプリ内またはサポートページにて告知します。
+    最新版は本ページで常時公開します。
+  </p>
+
+  <h2>10. お問い合わせ</h2>
+  <p>
+    本ポリシーに関するご質問、データ削除のご依頼、その他お問い合わせは、以下までご連絡ください。
+  </p>
+  <div class="panel">
+    Email: <a href="mailto:droid1729@gmail.com">droid1729@gmail.com</a><br>
+    返信には通常 1〜3 営業日いただきます。
+  </div>
+
+  <footer>
+    &copy; 2026 Tempura Studio. All rights reserved.<br>
+    本ポリシーは日本語を正本とします。
+  </footer>
+</main>
+</body>
+</html>
